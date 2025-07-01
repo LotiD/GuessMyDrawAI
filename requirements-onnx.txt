@@ -1,0 +1,11 @@
+# Version ultra-légère ONNX Runtime
+Flask==3.1.0
+Flask-CORS==5.0.0
+onnxruntime==1.16.3
+numpy==1.24.3
+Pillow==10.4.0
+
+# Plus de PyTorch ! (remplacé par ONNX Runtime)
+# torch==2.7.1  ← Supprimé (2GB → 50MB)
+# torchvision==0.20.1  ← Supprimé  
+# tensorboard==2.18.0  ← Supprimé 
