@@ -28,7 +28,7 @@ Une application web interactive utilisant l'intelligence artificielle pour devin
 
 ### 1. **Installation**
 ```bash
-git clone https://github.com/VOTRE-USERNAME/guess-my-drawing
+git clone https://github.com/LotiD/guess-my-drawing
 cd guess-my-drawing
 pip install -r requirements.txt
 ```
