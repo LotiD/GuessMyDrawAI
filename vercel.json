@@ -1,23 +1,12 @@
 {
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "guess-my-drawing/web/index.html",
-      "use": "@vercel/static"
+      "source": "/api/(.*)",
+      "destination": "/guess-my-drawing/src/api.py"
     },
     {
-      "src": "guess-my-drawing/src/api.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "guess-my-drawing/src/api.py"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "guess-my-drawing/web/$1"
+      "source": "/(.*)",
+      "destination": "/guess-my-drawing/web/$1"
     }
   ],
   "functions": {
