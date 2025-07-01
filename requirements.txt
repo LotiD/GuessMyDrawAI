@@ -1,18 +1,11 @@
-# Deep Learning
-torch==2.7.1
-torchvision==0.20.1
-tensorboard==2.18.0
-
-# Web Framework
+# Version ultra-légère pour déploiement web avec ONNX Runtime
 Flask==3.1.0
 Flask-CORS==5.0.0
-
-# Data Processing
+onnxruntime==1.16.3
 numpy==1.24.3
 Pillow==10.4.0
 
-# Visualization
-matplotlib==3.7.1
-
-# Utilities
-requests==2.31.0 
+# Plus de PyTorch (remplacé par ONNX Runtime - 2GB → 50MB!)
+# torch==2.7.1
+# torchvision==0.20.1
+# tensorboard==2.18.0 

@@ -1,14 +1,14 @@
 {
   "builds": [
     {
-      "src": "guess-my-drawing/src/api.py",
+      "src": "guess-my-drawing/src/api_onnx.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/guess-my-drawing/src/api.py"
+      "dest": "/guess-my-drawing/src/api_onnx.py"
     },
     {
       "src": "/(.*)",
